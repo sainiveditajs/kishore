@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick the Right Answer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .question {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .answer-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="question">Pick the right answer</div>
+    <div class="button-container">
+        <button class="answer-button" onclick="checkAnswer('KOSHORI')">K_ _ _ _ _ _</button>
+        <button class="answer-button" onclick="checkAnswer('KOSHORI')">K _ _ _ _ _ _</button>
+    </div>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'KOSHORI') {
+                alert('CORRECT! You picked KOSHORI');
+                // You can replace the alert with a custom modal or other UI element
+            } else {
+                alert('Incorrect. Try again.');
+                // You can provide different feedback for incorrect answers
+            }
+        }
+    </script>
+</body>
+</html>
